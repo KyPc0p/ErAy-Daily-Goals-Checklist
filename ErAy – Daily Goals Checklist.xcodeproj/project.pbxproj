@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		79F576D2290F7ECB005A294A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576D1290F7ECB005A294A /* AppDelegate.swift */; };
 		79F576D4290F7ECB005A294A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576D3290F7ECB005A294A /* SceneDelegate.swift */; };
-		79F576D6290F7ECB005A294A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576D5290F7ECB005A294A /* ViewController.swift */; };
-		79F576D9290F7ECB005A294A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F576D7290F7ECB005A294A /* Main.storyboard */; };
+		79F576D6290F7ECB005A294A /* GoalsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576D5290F7ECB005A294A /* GoalsListViewController.swift */; };
 		79F576DC290F7ECB005A294A /* ErAy___Daily_Goals_Checklist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79F576DA290F7ECB005A294A /* ErAy___Daily_Goals_Checklist.xcdatamodeld */; };
 		79F576DE290F7ECC005A294A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F576DD290F7ECC005A294A /* Assets.xcassets */; };
 		79F576E1290F7ECC005A294A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F576DF290F7ECC005A294A /* LaunchScreen.storyboard */; };
+		79F576EC290F8E6D005A294A /* GoalCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576EB290F8E6D005A294A /* GoalCreationViewController.swift */; };
+		79F576EE290FA3E6005A294A /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576ED290FA3E6005A294A /* AddGoalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79F576CE290F7ECB005A294A /* ErAy – Daily Goals Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ErAy – Daily Goals Checklist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F576D1290F7ECB005A294A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F576D3290F7ECB005A294A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79F576D5290F7ECB005A294A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79F576D8290F7ECB005A294A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79F576D5290F7ECB005A294A /* GoalsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListViewController.swift; sourceTree = "<group>"; };
 		79F576DB290F7ECB005A294A /* ErAy___Daily_Goals_Checklist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ErAy___Daily_Goals_Checklist.xcdatamodel"; sourceTree = "<group>"; };
 		79F576DD290F7ECC005A294A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79F576E0290F7ECC005A294A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79F576E2290F7ECC005A294A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F576EB290F8E6D005A294A /* GoalCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCreationViewController.swift; sourceTree = "<group>"; };
+		79F576ED290FA3E6005A294A /* AddGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		79F576D0290F7ECB005A294A /* ErAy – Daily Goals Checklist */ = {
 			isa = PBXGroup;
 			children = (
-				79F576D1290F7ECB005A294A /* AppDelegate.swift */,
-				79F576D3290F7ECB005A294A /* SceneDelegate.swift */,
-				79F576D5290F7ECB005A294A /* ViewController.swift */,
-				79F576D7290F7ECB005A294A /* Main.storyboard */,
-				79F576DD290F7ECC005A294A /* Assets.xcassets */,
+				79F576EA290F8129005A294A /* ViewControllers */,
+				79F576E8290F80F8005A294A /* App */,
+				79F576E9290F8118005A294A /* Resources */,
 				79F576DF290F7ECC005A294A /* LaunchScreen.storyboard */,
-				79F576E2290F7ECC005A294A /* Info.plist */,
 				79F576DA290F7ECB005A294A /* ErAy___Daily_Goals_Checklist.xcdatamodeld */,
 			);
 			path = "ErAy – Daily Goals Checklist";
+			sourceTree = "<group>";
+		};
+		79F576E8290F80F8005A294A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				79F576D1290F7ECB005A294A /* AppDelegate.swift */,
+				79F576D3290F7ECB005A294A /* SceneDelegate.swift */,
+				79F576E2290F7ECC005A294A /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		79F576E9290F8118005A294A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79F576DD290F7ECC005A294A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		79F576EA290F8129005A294A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79F576D5290F7ECB005A294A /* GoalsListViewController.swift */,
+				79F576ED290FA3E6005A294A /* AddGoalView.swift */,
+				79F576EB290F8E6D005A294A /* GoalCreationViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +157,6 @@
 			files = (
 				79F576E1290F7ECC005A294A /* LaunchScreen.storyboard in Resources */,
 				79F576DE290F7ECC005A294A /* Assets.xcassets in Resources */,
-				79F576D9290F7ECB005A294A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F576DC290F7ECB005A294A /* ErAy___Daily_Goals_Checklist.xcdatamodeld in Sources */,
-				79F576D6290F7ECB005A294A /* ViewController.swift in Sources */,
+				79F576EC290F8E6D005A294A /* GoalCreationViewController.swift in Sources */,
+				79F576D6290F7ECB005A294A /* GoalsListViewController.swift in Sources */,
+				79F576EE290FA3E6005A294A /* AddGoalView.swift in Sources */,
 				79F576D2290F7ECB005A294A /* AppDelegate.swift in Sources */,
 				79F576D4290F7ECB005A294A /* SceneDelegate.swift in Sources */,
 			);
@@ -151,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79F576D7290F7ECB005A294A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79F576D8290F7ECB005A294A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79F576DF290F7ECC005A294A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,12 +313,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KKH4UHMTXR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ErAy – Daily Goals Checklist/Info.plist";
+				INFOPLIST_FILE = "ErAy – Daily Goals Checklist/App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +326,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ArtemKharshenko.ru.ErAy---Daily-Goals-Checklist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,12 +344,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KKH4UHMTXR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ErAy – Daily Goals Checklist/Info.plist";
+				INFOPLIST_FILE = "ErAy – Daily Goals Checklist/App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ArtemKharshenko.ru.ErAy---Daily-Goals-Checklist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
