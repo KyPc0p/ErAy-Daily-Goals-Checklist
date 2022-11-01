@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79E8390A2910FFC600B08EC9 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E839092910FFC600B08EC9 /* CategoriesView.swift */; };
+		79E8390C2911047100B08EC9 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8390B2911047100B08EC9 /* CategoriesCollectionViewCell.swift */; };
+		79E8391029111BA800B08EC9 /* PopularGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E8390F29111BA800B08EC9 /* PopularGoalsView.swift */; };
 		79F576D2290F7ECB005A294A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576D1290F7ECB005A294A /* AppDelegate.swift */; };
 		79F576D4290F7ECB005A294A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576D3290F7ECB005A294A /* SceneDelegate.swift */; };
 		79F576D6290F7ECB005A294A /* GoalsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576D5290F7ECB005A294A /* GoalsListViewController.swift */; };
 		79F576DC290F7ECB005A294A /* ErAy___Daily_Goals_Checklist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79F576DA290F7ECB005A294A /* ErAy___Daily_Goals_Checklist.xcdatamodeld */; };
 		79F576DE290F7ECC005A294A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F576DD290F7ECC005A294A /* Assets.xcassets */; };
 		79F576E1290F7ECC005A294A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F576DF290F7ECC005A294A /* LaunchScreen.storyboard */; };
-		79F576EC290F8E6D005A294A /* GoalCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576EB290F8E6D005A294A /* GoalCreationViewController.swift */; };
-		79F576EE290FA3E6005A294A /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576ED290FA3E6005A294A /* AddGoalView.swift */; };
+		79F576EC290F8E6D005A294A /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576EB290F8E6D005A294A /* CreationViewController.swift */; };
+		79F576EE290FA3E6005A294A /* PlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F576ED290FA3E6005A294A /* PlusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79E839092910FFC600B08EC9 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		79E8390B2911047100B08EC9 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		79E8390F29111BA800B08EC9 /* PopularGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularGoalsView.swift; sourceTree = "<group>"; };
 		79F576CE290F7ECB005A294A /* ErAy – Daily Goals Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ErAy – Daily Goals Checklist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F576D1290F7ECB005A294A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F576D3290F7ECB005A294A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +32,8 @@
 		79F576DD290F7ECC005A294A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79F576E0290F7ECC005A294A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79F576E2290F7ECC005A294A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79F576EB290F8E6D005A294A /* GoalCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCreationViewController.swift; sourceTree = "<group>"; };
-		79F576ED290FA3E6005A294A /* AddGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
+		79F576EB290F8E6D005A294A /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
+		79F576ED290FA3E6005A294A /* PlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79E8390D2911053B00B08EC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E839092910FFC600B08EC9 /* CategoriesView.swift */,
+				79E8390F29111BA800B08EC9 /* PopularGoalsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79E8390E2911054500B08EC9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		79E839112911230F00B08EC9 /* GoalsListVCGroup */ = {
+			isa = PBXGroup;
+			children = (
+				79F576D5290F7ECB005A294A /* GoalsListViewController.swift */,
+				79F576EA290F8129005A294A /* Views */,
+				79E8390E2911054500B08EC9 /* Cells */,
+			);
+			path = GoalsListVCGroup;
+			sourceTree = "<group>";
+		};
+		79E839122911232B00B08EC9 /* CreationVCGroup */ = {
+			isa = PBXGroup;
+			children = (
+				79F576EB290F8E6D005A294A /* CreationViewController.swift */,
+				79E8390D2911053B00B08EC9 /* Views */,
+				79E83913291123C200B08EC9 /* Cells */,
+			);
+			path = CreationVCGroup;
+			sourceTree = "<group>";
+		};
+		79E83913291123C200B08EC9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79E8390B2911047100B08EC9 /* CategoriesCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		79F576C5290F7ECB005A294A = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +110,8 @@
 		79F576D0290F7ECB005A294A /* ErAy – Daily Goals Checklist */ = {
 			isa = PBXGroup;
 			children = (
-				79F576EA290F8129005A294A /* ViewControllers */,
+				79E839122911232B00B08EC9 /* CreationVCGroup */,
+				79E839112911230F00B08EC9 /* GoalsListVCGroup */,
 				79F576E8290F80F8005A294A /* App */,
 				79F576E9290F8118005A294A /* Resources */,
 				79F576DF290F7ECC005A294A /* LaunchScreen.storyboard */,
@@ -87,14 +138,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		79F576EA290F8129005A294A /* ViewControllers */ = {
+		79F576EA290F8129005A294A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				79F576D5290F7ECB005A294A /* GoalsListViewController.swift */,
-				79F576ED290FA3E6005A294A /* AddGoalView.swift */,
-				79F576EB290F8E6D005A294A /* GoalCreationViewController.swift */,
+				79F576ED290FA3E6005A294A /* PlusView.swift */,
 			);
-			path = ViewControllers;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,11 +217,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F576DC290F7ECB005A294A /* ErAy___Daily_Goals_Checklist.xcdatamodeld in Sources */,
-				79F576EC290F8E6D005A294A /* GoalCreationViewController.swift in Sources */,
+				79F576EC290F8E6D005A294A /* CreationViewController.swift in Sources */,
 				79F576D6290F7ECB005A294A /* GoalsListViewController.swift in Sources */,
-				79F576EE290FA3E6005A294A /* AddGoalView.swift in Sources */,
+				79F576EE290FA3E6005A294A /* PlusView.swift in Sources */,
+				79E8390C2911047100B08EC9 /* CategoriesCollectionViewCell.swift in Sources */,
+				79E8391029111BA800B08EC9 /* PopularGoalsView.swift in Sources */,
 				79F576D2290F7ECB005A294A /* AppDelegate.swift in Sources */,
 				79F576D4290F7ECB005A294A /* SceneDelegate.swift in Sources */,
+				79E8390A2910FFC600B08EC9 /* CategoriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,14 +9,15 @@ import UIKit
 
 class GoalsListViewController: UIViewController {
     
+    private let plusView = PlusView()
+    
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell1")
         return tableView
     }()
-
-    private let plusView = addGoalView()
     
+    //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
@@ -24,7 +25,7 @@ class GoalsListViewController: UIViewController {
         setupPlusView()
         setConstraints()
     }
-    
+    //MARK: - Functions
     private func setupNavigationBar(){
         let navBarAppearance = UINavigationBarAppearance()
         
@@ -53,10 +54,27 @@ class GoalsListViewController: UIViewController {
     }
     
     @objc private func addNewGoal() {
-        let goalVC = GoalCreationViewController()
+        let goalVC = CreationViewController()
         navigationController?.pushViewController(goalVC, animated: true)
     }
     
+}
+
+//MARK: - UITableViewDataSource
+extension GoalsListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
+        cell.textLabel?.text = "New Task"
+        return cell
+    }
+}
+
+//MARK: - Constraints
+extension GoalsListViewController {
     private func setConstraints() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -74,19 +92,4 @@ class GoalsListViewController: UIViewController {
             plusView.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
-}
-
-//MARK: - UITableViewDataSource
-extension GoalsListViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        20
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
-        cell.textLabel?.text = "New Task"
-        return cell
-    }
-    
-    
 }

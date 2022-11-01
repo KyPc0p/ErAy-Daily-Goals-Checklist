@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class addGoalView: UIView {
+class PlusView: UIView {
     
     private let plusView = UIImageView()
     
@@ -19,10 +19,12 @@ class addGoalView: UIView {
         setPlusViewImage()
     }
     
+    //MARK: - Init
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
+    //MARK: - Functions
     func setPlusViewImage() {
         plusView.tintColor = .white
         plusView.contentMode = .center
@@ -39,7 +41,7 @@ class addGoalView: UIView {
 
         let rect = CGRect(x: 0, y: 0, width: 60, height: 60)
         
-        context.setFillColor(UIColor.red.cgColor)              //color change
+        context.setFillColor(UIColor.red.cgColor)
         context.addEllipse(in: rect)
         context.fillEllipse(in: rect)
     }
