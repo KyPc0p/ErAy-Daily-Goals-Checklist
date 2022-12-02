@@ -83,7 +83,7 @@ extension CreationViewController {
             popularGoalsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             popularGoalsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             popularGoalsView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            popularGoalsView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor)  //как остановить ScrollView?
+            popularGoalsView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor)  //остановить ScrollView?
         ])
         
     }
