@@ -17,7 +17,9 @@ class CategoriesView: UIView {
     
     let collectionView: UICollectionView = {  //ячеки должны уходить вбок, а не вниз
         let collectionViewLayout = UICollectionViewFlowLayout()  //важно что бы именно Flow
+        collectionViewLayout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
+        collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
     

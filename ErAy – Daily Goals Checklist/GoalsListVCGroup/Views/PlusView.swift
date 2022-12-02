@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class PlusView: UIView {
-    
+    //нужен градиент
     private let plusView = UIImageView()
     
     override init(frame: CGRect) {
